@@ -35,6 +35,11 @@ code {
 	font-size: 1.05em;
 }
 
+#register-page {
+	max-width: 900px;
+	font-size: 1.05em;
+}
+
 .link {
 	text-decoration: none;
 	color: black;

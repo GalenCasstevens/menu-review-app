@@ -2,10 +2,15 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-function Login() {
+function Register() {
 	return (
-		<Container id="login-page">
+		<Container id="register-page">
 			<Form>
+				<Form.Group className="mb-3" controlId="formBasicName">
+					<Form.Label>Name</Form.Label>
+					<Form.Control type="text" placeholder="Enter name" />
+				</Form.Group>
+
 				<Form.Group className="mb-3" controlId="formBasicEmail">
 					<Form.Label>Email</Form.Label>
 					<Form.Control type="email" placeholder="Enter email" />
@@ -18,7 +23,7 @@ function Login() {
 
 				<div className="d-grid gap-2">
 					<Button variant="primary" type="submit">
-						Login
+						Register
 					</Button>
 				</div>
 			</Form>
@@ -26,4 +31,4 @@ function Login() {
 	);
 }
 
-export default Login;
+export default Register;
