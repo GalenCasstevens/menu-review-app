@@ -23,4 +23,23 @@ code {
 
 #brand-name {
 	font-weight: 500;
+	font-size: 1.4em;
+}
+
+#header {
+	margin-bottom: 25px;
+}
+
+#login-page {
+	max-width: 900px;
+	font-size: 1.05em;
+}
+
+.link {
+	text-decoration: none;
+	color: black;
+}
+
+.link:hover {
+	color: #4d4d4d;
 }
