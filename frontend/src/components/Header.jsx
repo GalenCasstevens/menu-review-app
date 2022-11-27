@@ -5,7 +5,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faUtensils,
-	faUserPlus,
+	faUser,
 	faRightToBracket,
 } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
@@ -21,14 +21,14 @@ function Header() {
 					</Link>
 				</Navbar.Brand>
 				<Nav className="ms-auto">
-					<Nav.Link href="#login">
+					<Nav.Link id="nav-login">
 						<Link class="link" to="/login">
 							<FontAwesomeIcon icon={faRightToBracket} /> Login
 						</Link>
 					</Nav.Link>
-					<Nav.Link href="#register">
+					<Nav.Link id="nav-register">
 						<Link class="link" to="/register">
-							<FontAwesomeIcon icon={faUserPlus} /> Register
+							<FontAwesomeIcon icon={faUser} /> Register
 						</Link>
 					</Nav.Link>
 				</Nav>

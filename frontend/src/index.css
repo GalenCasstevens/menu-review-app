@@ -5,13 +5,13 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: #0002e4;
 }
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
 }
-
 .nav-link {
 	color: #000;
 }
@@ -24,15 +24,59 @@ code {
 #brand-name {
 	font-weight: 500;
 	font-size: 1.4em;
+	font-family: 'Lobster';
+}
+
+#nav-login,
+#nav-register {
+	font-family: 'Lobster';
+	font-weight: 400;
+	font-size: 1.2em;
 }
 
 #header {
 	margin-bottom: 25px;
 }
 
+nav.bg-light {
+	background-color: #ba00b9 !important;
+}
+
+.btn-primary {
+	background-color: #ba00b9 !important;
+	font-weight: 600;
+	font-size: 1.05em;
+}
+
+#home-page {
+	max-width: 960px;
+}
+
 #login-page {
 	max-width: 900px;
 	font-size: 1.05em;
+}
+
+.form-label {
+	color: #fff;
+	font-weight: 600;
+}
+
+.badge.bg-primary {
+	background-color: #b9ff00 !important;
+	color: black;
+	font-family: 'Patrick Hand';
+	font-size: 1.15em;
+	padding: 4px 8px;
+}
+
+span.num-reviews > .badge.bg-primary {
+	background-color: #ba00b9 !important;
+	color: #fff;
+	font-family: 'Open Sans';
+	font-size: 0.75em;
+	padding: 6px 0px;
+	width: 130px;
 }
 
 #register-page {
@@ -42,9 +86,37 @@ code {
 
 .link {
 	text-decoration: none;
-	color: black;
+	color: #fff;
+	/* text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; */
+	font-size: 1.2em;
 }
 
 .link:hover {
-	color: #4d4d4d;
+	font-size: 1.2em;
+	color: #dadada;
+}
+
+#restaurant-list .list-group-item {
+	background-color: #3435aa;
+	color: #fff;
+	font-size: 1.1em;
+}
+
+.restaurant-name {
+	font-family: 'Lobster';
+	font-size: 1.35em;
+}
+
+.restaurant-addr {
+	font-family: 'Patrick Hand';
+	font-weight: 550;
+	margin-bottom: 4px;
+}
+
+.restaurant-rating {
+	margin-left: 4px;
+}
+
+.facility-item {
+	margin-right: 4px;
 }
