@@ -170,7 +170,9 @@ function RestaurantList() {
 						</Badge>
 					</span>
 				</h5>
-				<p className="restaurant-addr">2700 8th Ave, Garden City, CO 80631</p>
+				<p className="restaurant-addr">
+					1405 Riverchase Blvd, Rock Hill, SC 29732
+				</p>
 				<div className="restaurant-facilities">
 					<span className="facility-item">
 						<Badge bg="primary">Pizza</Badge>
@@ -195,7 +197,7 @@ function RestaurantList() {
 					</span>
 					<span className="num-reviews">
 						<Badge bg="primary" className="float-end">
-							14 Reviews
+							63 Reviews
 						</Badge>
 					</span>
 				</h5>
