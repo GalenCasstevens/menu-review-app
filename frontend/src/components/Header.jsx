@@ -9,28 +9,29 @@ import {
 	faRightToBracket,
 } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
+import {LinkContainer} from 'react-router-bootstrap';
 
 function Header() {
 	return (
 		<Navbar id="header" bg="light" expand="lg">
 			<Container>
-				<Navbar.Brand id="brand-name" href="#home">
-					<Link class="link" to="/">
+				<LinkContainer to="/">
+					<Navbar.Brand id="brand-name" className='link' to="/">
 						<FontAwesomeIcon icon={faUtensils} />
 						&nbsp; Menu Review
-					</Link>
-				</Navbar.Brand>
+					</Navbar.Brand>
+				</LinkContainer>
 				<Nav className="ms-auto">
-					<Nav.Link id="nav-login">
-						<Link class="link" to="/login">
+					<LinkContainer to="/login">
+						<Nav.Link id="nav-login" className='link'>
 							<FontAwesomeIcon icon={faRightToBracket} /> Login
-						</Link>
-					</Nav.Link>
-					<Nav.Link id="nav-register">
-						<Link class="link" to="/register">
+						</Nav.Link>
+					</LinkContainer>
+					<LinkContainer to="/register">
+						<Nav.Link id="nav-register" className='link'>
 							<FontAwesomeIcon icon={faUser} /> Register
-						</Link>
-					</Nav.Link>
+						</Nav.Link>
+					</LinkContainer>
 				</Nav>
 			</Container>
 		</Navbar>
