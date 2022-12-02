@@ -8,7 +8,6 @@ import {
 	faUser,
 	faRightToBracket,
 } from '@fortawesome/free-solid-svg-icons';
-import { Link, useNavigate } from 'react-router-dom';
 import {LinkContainer} from 'react-router-bootstrap';
 
 function Header() {

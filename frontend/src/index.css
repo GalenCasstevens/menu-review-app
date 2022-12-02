@@ -121,3 +121,12 @@ span.num-reviews > .badge.bg-primary {
 .facility-item {
 	margin-right: 4px;
 }
+
+.restaurant-link {
+	text-decoration: none;
+	color: #fff;
+}
+
+.restaurant-link:hover {
+	color: #777;
+}
