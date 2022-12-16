@@ -3,7 +3,7 @@ import RestaurantList from '../components/RestaurantList';
 
 function Home() {
 	return (
-		<Container id="home-page">
+		<Container id="restautant-list">
 			<RestaurantList />
 		</Container>
 	);

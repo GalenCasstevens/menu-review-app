@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 
 function Register() {
 	return (
-		<Container id="register-page">
+		<div id="register-page">
 			<Form>
 				<Form.Group className="mb-3" controlId="formBasicName">
 					<Form.Label>Name</Form.Label>
@@ -22,12 +22,12 @@ function Register() {
 				</Form.Group>
 
 				<div className="d-grid gap-2">
-					<Button variant="primary" type="submit">
+					<Button id="register-btn" variant="primary" type="submit">
 						Register
 					</Button>
 				</div>
 			</Form>
-		</Container>
+		</div>
 	);
 }
 

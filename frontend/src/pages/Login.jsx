@@ -1,10 +1,9 @@
-import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 function Login() {
 	return (
-		<Container id="login-page">
+		<div id="login-page">
 			<Form>
 				<Form.Group className="mb-3" controlId="formBasicEmail">
 					<Form.Label>Email</Form.Label>
@@ -17,12 +16,12 @@ function Login() {
 				</Form.Group>
 
 				<div className="d-grid gap-2">
-					<Button variant="primary" type="submit">
+					<Button id="login-btn" variant="primary" type="submit">
 						Login
 					</Button>
 				</div>
 			</Form>
-		</Container>
+		</div>
 	);
 }
 

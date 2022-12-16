@@ -6,6 +6,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: #0002e4;
+	color: #fff;
 }
 
 code {
@@ -20,8 +21,8 @@ code {
 
 #brand-name {
 	font-weight: 550;
-	font-size: 1.6em;
 	font-family: 'Lobster';
+	font-size: 1.65em;
 }
 
 #nav-login,
@@ -45,13 +46,21 @@ nav.bg-light {
 	font-size: 1.05em;
 }
 
-#home-page {
-	max-width: 960px;
-}
-
 #login-page {
+	margin: 0 auto;
 	max-width: 900px;
 	font-size: 1.05em;
+}
+
+#register-page {
+	margin: 0 auto;
+	max-width: 900px;
+	font-size: 1.05em;
+}
+
+#login-btn,
+#register-btn {
+	margin-top: 5px;
 }
 
 .form-label {
@@ -63,7 +72,7 @@ nav.bg-light {
 	background-color: #b9ff00 !important;
 	color: black;
 	font-family: 'Patrick Hand';
-	font-size: .85em;
+	font-size: 0.85em;
 	padding: 4px 8px;
 }
 
@@ -76,12 +85,9 @@ span.num-reviews > .badge.bg-primary {
 	width: 130px;
 }
 
-#register-page {
-	max-width: 900px;
-	font-size: 1.05em;
-}
-
-.link, .nav-link, .link.active {
+.link,
+.nav-link,
+.link.active {
 	text-decoration: none;
 	color: #fff !important;
 	/* text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; */
@@ -94,7 +100,8 @@ span.num-reviews > .badge.bg-primary {
 }
 
 #restaurant-list {
-	margin-bottom: 25px;
+	max-width: 1080px;
+	margin: 0 auto 25px auto;
 }
 
 #restaurant-list .list-group-item {
@@ -129,4 +136,9 @@ span.num-reviews > .badge.bg-primary {
 
 .restaurant-link:hover {
 	color: #777;
+}
+
+#menu-reviews-title {
+	font-family: 'Lobster';
+	font-size: 1.6em;
 }

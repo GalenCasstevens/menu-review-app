@@ -8,26 +8,26 @@ import {
 	faUser,
 	faRightToBracket,
 } from '@fortawesome/free-solid-svg-icons';
-import {LinkContainer} from 'react-router-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 function Header() {
 	return (
 		<Navbar id="header" bg="light" expand="lg">
 			<Container>
 				<LinkContainer to="/">
-					<Navbar.Brand id="brand-name" className='link' to="/">
+					<Navbar.Brand id="brand-name" className="link" to="/">
 						<FontAwesomeIcon icon={faUtensils} />
-						&nbsp; Menu Review
+						&nbsp; Rate My Menu
 					</Navbar.Brand>
 				</LinkContainer>
 				<Nav className="ms-auto">
 					<LinkContainer to="/login">
-						<Nav.Link id="nav-login" className='link'>
+						<Nav.Link id="nav-login" className="link">
 							<FontAwesomeIcon icon={faRightToBracket} /> Login
 						</Nav.Link>
 					</LinkContainer>
 					<LinkContainer to="/register">
-						<Nav.Link id="nav-register" className='link'>
+						<Nav.Link id="nav-register" className="link">
 							<FontAwesomeIcon icon={faUser} /> Register
 						</Nav.Link>
 					</LinkContainer>
