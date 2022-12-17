@@ -3,12 +3,11 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import MenuReviews from './pages/MenuReviews';
+import Reviews from './pages/Reviews';
+import Container from 'react-bootstrap/Container';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import Container from 'react-bootstrap/Container';
 
 function App() {
 	return (
@@ -20,7 +19,7 @@ function App() {
 						<Route exact path="/" element={<Home />} />
 						<Route path="/login" element={<Login />} />
 						<Route path="/register" element={<Register />} />
-						<Route path="/restaurant/:id" element={<MenuReviews />} />
+						<Route path="/restaurant/:id" element={<Reviews />} />
 					</Routes>
 				</Container>
 			</Router>
