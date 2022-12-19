@@ -20,18 +20,21 @@ function Header() {
 						&nbsp; Rate My Menu
 					</Navbar.Brand>
 				</LinkContainer>
-				<Nav className="ms-auto">
-					<LinkContainer to="/login">
-						<Nav.Link id="nav-login" className="link">
-							<FontAwesomeIcon icon={faRightToBracket} /> Login
-						</Nav.Link>
-					</LinkContainer>
-					<LinkContainer to="/register">
-						<Nav.Link id="nav-register" className="link">
-							<FontAwesomeIcon icon={faUser} /> Register
-						</Nav.Link>
-					</LinkContainer>
-				</Nav>
+				<Navbar.Toggle aria-controls="basic-navbar-nav" />
+				<Navbar.Collapse id="basic-navbar-nav">
+					<Nav className="ms-auto">
+						<LinkContainer to="/login">
+							<Nav.Link id="nav-login" className="link">
+								<FontAwesomeIcon icon={faRightToBracket} /> Login
+							</Nav.Link>
+						</LinkContainer>
+						<LinkContainer to="/register">
+							<Nav.Link id="nav-register" className="link">
+								<FontAwesomeIcon icon={faUser} /> Register
+							</Nav.Link>
+						</LinkContainer>
+					</Nav>
+				</Navbar.Collapse>
 			</Container>
 		</Navbar>
 	);

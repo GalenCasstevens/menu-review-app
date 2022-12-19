@@ -1,4 +1,3 @@
-import React from 'react';
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import RestaurantData from '../data/RestaurantData';
@@ -55,7 +54,11 @@ function Reviews() {
 													</span>
 												</Col>
 												<Col>
-													<span className="datetime">{DateTime()}</span>
+													<span className="datetime">
+														{DateTime()
+															.toString()
+															.slice(0, DateTime().toString().length - 3)}
+													</span>
 												</Col>
 											</Row>
 										</span>
@@ -67,15 +70,11 @@ function Reviews() {
 									</div>
 								</Col>
 								<Col md={9}>
-									<div className="review-rating-comment">
-										<div className="review-rating">
-											<span className="review-menu-item">
-												{review.menuItem}
-											</span>{' '}
-											<Rating rating={review.rating} />
-										</div>
-										<p className="review-comment">{review.comment}</p>
+									<div className="review-rating">
+										<span className="review-menu-item">{review.menuItem}</span>{' '}
+										<Rating rating={review.rating} />
 									</div>
+									<p className="review-comment">{review.comment}</p>
 								</Col>
 							</Row>
 						</ListGroup.Item>
