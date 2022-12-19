@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import RestaurantData from '../data/RestaurantData';
 import UserData from '../data/UserData';
 import ReviewData from '../data/ReviewData';
@@ -12,6 +12,8 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import DateTime from 'date-time';
 import Rating from '../components/Rating';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 
 function Reviews() {
 	const { id } = useParams();
@@ -27,10 +29,12 @@ function Reviews() {
 
 	return (
 		<>
-			<h2 id="menu-reviews-title">{restaurant.name}</h2>
-			<Button id="add-review-btn" variant="primary">
-				Leave Review
-			</Button>
+			<h2 id="reviews-title">{restaurant.name}</h2>
+			<Link to={`/restaurant/${id}/add-review`}>
+				<Button id="add-review-btn" variant="primary">
+					<FontAwesomeIcon icon={faPenToSquare} /> Add Review
+				</Button>
+			</Link>
 			<hr className="title-hr" />
 			<Container>
 				<ListGroup id="review-list">

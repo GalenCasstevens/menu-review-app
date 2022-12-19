@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Reviews from './pages/Reviews';
+import AddReview from './pages/AddReview';
 import Container from 'react-bootstrap/Container';
 
 import './App.css';
@@ -19,7 +20,8 @@ function App() {
 						<Route exact path="/" element={<Home />} />
 						<Route path="/login" element={<Login />} />
 						<Route path="/register" element={<Register />} />
-						<Route path="/restaurant/:id" element={<Reviews />} />
+						<Route path="/restaurant/:id/reviews" element={<Reviews />} />
+						<Route path="/restaurant/:id/add-review" element={<AddReview />} />
 					</Routes>
 				</Container>
 			</Router>

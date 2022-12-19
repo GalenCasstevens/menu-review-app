@@ -138,7 +138,7 @@ span.num-reviews > .badge.bg-primary {
 	color: #777;
 }
 
-#menu-reviews-title {
+#reviews-title {
 	font-family: 'Lobster';
 	font-size: 1.6em;
 	display: inline-block;
@@ -186,6 +186,20 @@ span.review-menu-item {
 	font-weight: 575;
 }
 
+#add-review-page {
+	margin: 0 auto;
+	max-width: 900px;
+}
+
 #add-review-btn {
 	float: right;
+}
+
+#review-rating-fg {
+	width: 55px;
+}
+
+#add-review-title {
+	font-family: 'Lobster';
+	font-size: 1.6em;
 }
