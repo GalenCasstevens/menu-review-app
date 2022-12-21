@@ -1,0 +1,19 @@
+{
+	"name": "menu-review-app",
+	"version": "1.0.0",
+	"description": "Rate my menu app",
+	"main": "server.js",
+	"scripts": {
+		"start": "node backend/server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GalenCasstevens/menu-review-app.git"
+	},
+	"author": "Galen Casstevens",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/GalenCasstevens/menu-review-app/issues"
+	},
+	"homepage": "https://github.com/GalenCasstevens/menu-review-app#readme"
+}
